@@ -1,32 +1,25 @@
 <!DOCTYPE html>
-<html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=1280">
-    <meta name="description" content="Tizen app"/>
-
-    <title>Tizen ForkPlayer 2.57m</title>
-
-    <link rel="stylesheet" href="css/main.css"/>
-	<link rel="stylesheet" href="css/player.css"/>
-	<script src="$WEBAPIS/webapis/webapis.js"></script>	
-	<script type="text/javascript" src="js/load.js"></script>
+<meta name="viewport" content="width=1280">
+<meta charset="UTF-8" />
+<script src="$WEBAPIS/webapis/webapis.js"></script>
+<script src="js/jquery-1.8.2.min.js"></script>
+<script src="js/load.js"></script>
+<title>Fork eXtensible Markup Language viewer application</title>
 </head>
-
 <body>
 <object id="av-player" type="application/avplayer"></object>
-<div id="startlogo" style="position:absolute;z-index:1;top:0px;left:0px;width:100%;height:100%;">
- <img src="img/startlogo.jpg" width=1280 height=720 />
- <div id="startcmd"></div>
+<div id="startlogo" style="position:absolute;z-index:1;top:0px;left:0px;width:100%;height:100%;background:#495255;'">
+	<div id='startcmd' style='position:absolute;bottom:0px;left:0px;color: rgb(125, 125, 125);  background-color: rgb(250, 250, 250);height: 20px;font-size: 16px;    white-space: nowrap;'>wait /js/load.js</div>
 </div>
 <div id="main">
 	<div id="pr"></div> 
-</div> 
+</div>
+<div id="other" style="display:none;position:absolute;top:0px;left:0px;width:0px;height:0px;"></div>
 <div id="vk" style="display:none;"></div>
 <div id="QualCh" style="display:none;background-color:black;"></div>
 <div id="MenuCh" style="display:none;background-color:black;"></div>
 <div id="popUp" style="display:none;"></div>
 <div id="player" style="display:none;"></div>
-</body> 
 </body>
 </html>
